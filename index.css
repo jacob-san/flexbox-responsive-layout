@@ -47,6 +47,12 @@ p {
   margin: 1.2em 0;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid magenta;
+}
+
+.col {
+  border: 1px solid gray;
 }
 
 .col-1 {
@@ -65,4 +71,15 @@ p {
   background-color: #212614;
   padding: 1em;
   color: #ffff;
+}
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
 }
