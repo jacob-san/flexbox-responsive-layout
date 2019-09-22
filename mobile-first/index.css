@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 10px;
+  margin: 0;
+}
+
+/* img {
+  display: block;
+  width: 100%;
+} */
+
+/*=============
+  Typography
+=============*/
+
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: 400px;
+  color: #143774;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header-sub-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.article-title {
+  font-size: 2.4rem;
+}
+
+/*=============
+  Layout
+=============*/
+
+header {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 1em;
+  text-transform: uppercase;
+  color: #707070;
+  cursor: pointer;
+  padding: 0.4em 0;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.container {
+}
+
+.main {
+}
+
+.sidebar {
+}
+
+.article-recent {
+}
+.article-recent-main {
+}
+.article-recent-secondary {
+}
+
+.article-recent-secondary img {
+}
+
+@media (max-width: 675px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
